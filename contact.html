@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRONOMY CORNER</title>
+
+    <!-- codi per la icona a la costat esquerra del title del totes les pàgines  -->
+    <link rel="website icon" type="png" href="img/webicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span>A</span>
+            <span>S</span>
+            <span>T</span>
+            <span>R</span>
+            <span>O</span>
+            <span>N</span>
+            <span>O</span>
+            <span>M</span>
+            <span>Y</span>
+            <br>
+            <span>C</span>
+            <span>O</span>
+            <span>R</span>
+            <span>N</span>
+            <span>E</span>
+            <span>R</span>
+        </h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="table.html">EXOPLANETS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <article class="contact">
+            <h3 class="htext">
+                <span class="htext htext1">Contact.</span>
+                <span class="htext htext3">Form</span>
+            </h3>
+
+            <h4>For doubts and more information contact us via this form.</h4>
+            <br>
+            <form id="primerform" name="primerform" action="gracies.html" onsubmit="return validarForm();"
+                method="post">
+                <fieldset>
+                    <legend>Data of Astronomer</legend>
+                    <br>
+                    <label for="Nom">Name and Surname</label><br>
+                    <br>
+                    <input type="text" name="nom" id="nom" placeholder=" N Tehreem" maxlength="25" required> * <br>
+                    <br>
+                    <br>
+                    <label for="email">E-mail address</label><br>
+                    <br>
+                    <input type="email" name="mail" id="mail" placeholder=" lol@server.domain" required> * <br>
+                    <br>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend> Type of Astronomer </legend>
+                    <br>
+                    <label for="radio">Teacher</label>
+                    <input type="radio" name="typeastronomer" id="Teacher">
+                    <label for="radio">Student</label>
+                    <input type="radio" name="typeastronomer" id="Student"><br>
+                    <br>
+
+                    <h5>Meassage</h5>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                </fieldset>
+                <br>
+
+                <fieldset class="flexcontainer">
+                    <legend></legend>
+                    <br>
+                    <div><button type="submit">Submit Form</button></div>
+                    <div><button type="reset">Reset Form</button></div>
+                    <br>
+                </fieldset>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" checked required>
+                <label for="checkbox">I accept the terms of Service *</label>
+
+            </form><br>
+            <br>
+        </article>
+    </section>
+    <footer>WEBMASTER - NTEHREEM</footer>
+</body>
+
+</html>

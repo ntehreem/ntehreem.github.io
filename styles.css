@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ----------------------------------CSS DE INDEX.HTML---------------------------------- */
+/* codi del body totes les pàgines web */
+body {
+    background-color: rgb(111, 173, 204);
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* codi footer de totes les pàgines */
+footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 0.2vw dashed rgb(68, 121, 218);
+    padding: 1.2vw;
+    text-align: center;
+    text-shadow:
+        0 0 2vw rgb(255, 255, 255),
+        0 0 3vw rgb(255, 255, 255);
+    background-image: url('img/footer.png');
+    background-size: cover;
+}
+
+/* codi header de totes les pàgines */
+header {
+    width: 100%;
+    padding: 1.5vw;
+    background-image: url('img/planets.jpg');
+    background-size: cover;
+}
+
+/* heading1 dins del heading de totes les pàgines */
+h1 {
+    font-size: 5.5vw;
+    text-align: center;
+    color: black;
+    text-align: center;
+}
+
+/* codi animació del h1 per totes les pàgines */
+h1 span {
+    animation: animate 2.5s ease-in infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+h1 span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+h1 span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+h1 span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+h1 span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+h1 span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        color: white;
+        filter: blur(0.2vw);
+        text-shadow:
+            0 0 0.5vw rgb(0, 225, 255),
+            0 0 1vw rgb(0, 225, 255),
+            0 0 20vw rgb(0, 225, 255),
+            0 0 4vw rgb(0, 225, 255),
+            0 0 6vw rgb(0, 225, 255),
+            0 0 10vw rgb(0, 225, 255),
+            0 0 15vw rgb(0, 225, 255),
+            0 0 20vw rgb(0, 225, 255);
+    }
+
+    5%,
+    95% {
+        color: black;
+        filter: blur(0vw);
+        text-shadow: none;
+    }
+}
+
+
+section {
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to top, rgb(0, 126, 189), rgb(111, 173, 204));
+    padding: 0.5vw;
+}
+
+/* codi per la bara de navegació (nav)*/
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex: 20%;
+    padding-bottom: 0.5vw;
+
+}
+
+section ul li a {
+    color: whitesmoke;
+    padding: 1.2vw;
+    text-align: center;
+    display: inline-block;
+    width: 98%;
+    margin: 0%;
+    background-color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* codi article de totes les pàgines */
+article {
+    flex: 4;
+    background-color: rgb(0, 0, 0);
+    padding: 1.2vw;
+}
+
+/* codi i animació del heading 3 dins del article */
+h3 {
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    text-shadow:
+        0 0 2vw whitesmoke,
+        0 0 3vw whitesmoke,
+        0 0 4vw whitesmoke;
+}
+
+.htext {
+    animation: color-animation 4s linear infinite;
+}
+
+.htext1 {
+    --color-1: #f3915c;
+    --color-2: #3D8DAE;
+    --color-3: #e6908e;
+}
+
+.htext2 {
+    --color-1: #e4ba61;
+    --color-2: #ACCFCB;
+    --color-3: #3db4bd;
+}
+
+.htext3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+/* codi imagtes especifiques de la pàgina home*/
+img[src="img/milkyway.jpg"] {
+    width: 100%;
+    /* padding-top: 3vw; */
+}
+
+img[src="img/asteroidbelt.jpg"] {
+    width: 100%;
+    /* padding-top: 3vw; */
+}
+
+img[src="img/moonhalfside.jpg"] {
+    width: 100%;
+    /* padding-top: 3vw; */
+}
+
+/* codi animació de les imagtes de la pàgina home */
+.imghome {
+    padding: 0.2vw;
+    transition: 0.2s;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+.imghome:hover {
+    transform: scale(1.15);
+    filter: grayscale(0%);
+    border: 0.1vw solid whitesmoke;
+}
+
+/* codi del a dins del bara navegació */
+a:hover {
+    background-image: linear-gradient(to right, rgb(151, 64, 100), rgb(255, 111, 171));
+    color: black;
+    box-shadow: 0.3vw 0.3vw 0.3vw rgb(82, 81, 81);
+}
+
+.active {
+    background-image: linear-gradient(to right, rgb(151, 64, 100), rgb(255, 111, 171));
+    color: black;
+    box-shadow: 0.3vw 0.3vw 0.3vw rgb(82, 81, 81);
+}
+
+/* codi del article per tenir columnes una costat de l'altre */
+.flex {
+    width: 100%;
+    display: flex;
+}
+
+/* codi del article per tenir tres columnes */
+.column {
+    flex: 35%;
+    padding: 1vw;
+    flex-direction: row;
+    text-align: center;
+    padding-right: 2vw;
+
+}
+
+/* codi del un clase del un div de text en la pàgina home */
+.gradienthome {
+    border-radius: 1vw;
+    background-image: linear-gradient(to top, rgb(122, 45, 76), rgb(40, 6, 44));
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 1.4vw;
+}
+
+
+/* ----------------------------------CSS DE TABLE.HTML---------------------------------- */
+/* codi per la taula, th i td per la pàgina de EXO planets */
+table,
+th,
+td {
+    border: black 0.2vw solid;
+    text-align: center;
+    padding: 1.2vw;
+    border-collapse: collapse;
+    margin-left: 6.5vw;
+    margin-right: 6.5vw;
+    margin-bottom: 3.5vw;
+}
+
+/* codi per gradient per la taula de la pàgina EXO Planets */
+table {
+    background-image: linear-gradient(to right, rgb(20, 58, 87), rgb(92, 33, 57));
+    border-radius: 2vw;
+}
+
+th {
+    font-size: 1.2vw;
+}
+
+/* codi i animació dels imagtes de la pàgina EXO Planets */
+.imgexo {
+    width: 35vw;
+    transition: 0.2s;
+    filter: grayscale(100%);
+}
+
+.imgexo:hover {
+    filter: grayscale(0%);
+}
+
+/* codi del una imagte especifica en la pàgina de EXO Planets */
+img[src="img/visiblelight.jpg"] {
+    width: 35vw;
+}
+
+/* ----------------------------------CSS DE GALLERY.HTML---------------------------------- */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.gallery {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 2.5vw;
+    transition: 0.2s;
+}
+
+/* cosi i animació dels tots les imagtes de la pàgina gallery */
+.gallery img {
+    margin-top: 2vw;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0.1vw;
+    transition: 0.2s;
+    filter: grayscale(100%);
+}
+
+.gallery img:hover {
+    transform: scale(1.15);
+    filter: grayscale(0%);
+    border: 0.1vw solid whitesmoke;
+}
+
+
+/* ----------------------------------CSS DE CONTACT.HTML---------------------------------- */
+/* codi per el background de la pàgina del contact */
+.contact {
+    background-image: url(img/redring.jpg);
+    background-size: cover;
+}
+
+h4 {
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 0.2vw 0.2vw 0.2vw rgb(87, 87, 87);
+}
+
+h5 {
+    color: whitesmoke;
+    font-size: 1.2vw;
+}
+
+/* codi del form de la pàgina del contact */
+form {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 3vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgb(46, 46, 46);
+    border-radius: 0.8vw;
+    border: 1px solid whitesmoke;
+    /* background-color: whitesmoke; */
+    /* opacity: 0.5; */
+}
+
+fieldset {
+    color: whitesmoke;
+    padding-left: 2vw;
+    box-shadow: 0.2vw 0.2vw 0.2vw rgb(46, 46, 46);
+    border-radius: 0.8vw;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+legend {
+    background-color: rgb(199, 99, 99);
+    border-radius: 0.2vw;
+    box-shadow: 0.2vw 0.2vw 0.2vw rgb(82, 81, 81);
+}
+
+#nom,
+#mail {
+    width: 95%;
+    height: 2.8vw;
+    border-radius: 0.8vw;
+}
+
+#nom:hover,
+#mail:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+#Teacher {
+    margin-right: 4.2vw;
+}
+
+option {
+    height: 1.8vw;
+}
+
+p {
+    padding-left: 2vw;
+}
+
+/* input[required]{
+    border-color: rgb(255, 94, 94);
+} */
+
+.checkbox {
+    color: whitesmoke;
+}
+
+/* codi del botons de la pàgina del contact i la seva animació */
+button {
+    width: 15vw;
+    font-size: 1.25vw;
+    border-radius: 0.8vw;
+    margin: 0.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 0.8vw;
+}
+
+button[type="submit"]:hover {
+    background-image: linear-gradient(to left, rgb(23, 146, 7), rgb(149, 167, 147));
+    box-shadow: 0.2vw 0.2vw 0.2vw rgb(46, 46, 46);
+}
+
+button[type="reset"]:hover {
+    background-image: linear-gradient(to left, rgb(255, 86, 86), rgb(236, 169, 169));
+    box-shadow: 0.2vw 0.2vw 0.2vw rgb(46, 46, 46);
+}
+
+
+/* codi del media query per totes les pàgines */
+@media only screen and (max-width: 600px) {
+    .flex {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    section ul li a {
+        width: 100%;
+    }
+
+    .imghome {
+        padding: 3vw;
+        transition: 0.2s;
+        /* Animation */
+        margin: 0 auto;
+    }
+
+    .imghome:hover {
+        transform: scale(1.1);
+    }
+}
